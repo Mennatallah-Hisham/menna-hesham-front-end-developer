@@ -1,0 +1,59 @@
+
+@media (min-width:47em){
+    .form__gp--flex{
+        flex-direction: row;
+    }
+   .txt-area{
+
+   width:66rem;
+   
+   }
+
+}
+@media (min-width:56em){
+    .heading--primary{
+        font-size: 4.6rem;
+    
+    
+    }
+    .heading--primary--sub{
+        font-size: 7rem;
+   
+    letter-spacing:1.5rem;
+   
+    }
+    
+    .heading--secondary{
+        font-size: 4rem;
+   
+        letter-spacing: 1.2rem;
+    
+    }
+
+    .txt{
+    
+        font-size: 1.8rem;
+       
+    
+    }
+    
+    .heading--sub{
+        font-size: 2.2rem;
+    
+        letter-spacing: 0.4rem;
+    
+        
+    }
+    .skill.card{
+        width:32rem;
+    
+    }
+
+
+}
+
+@media(min-width:75em){
+
+
+  
+}

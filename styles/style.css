@@ -1,0 +1,387 @@
+:root{
+
+    --clr-bg:#121212;
+    --clr-bg-secondary:#1f1f1f;
+  
+    --clr-txt:#f8f9fa;
+    --clr-txt:#c4c4c4;
+
+
+    --space-xs:2rem;
+    --space-s:4rem;
+    --space-m:8rem;
+    --space-l:10rem;
+
+--gradient:linear-gradient(to right bottom, #6a82fb ,#fc5c7d );
+--border-radius: 1rem;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+body{
+    background-color: var(--clr-bg);
+    color:var(--clr-txt);
+    font-family: 'Courier Prime', monospace;
+
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+
+
+}
+
+ul{
+    list-style: none;
+}
+
+a,
+button{
+text-decoration: none;
+display: inline-block;
+border:none;
+cursor: pointer;
+text-transform: capitalize;
+}
+
+
+
+
+.container,
+section{
+    /* border:1px solid red; */
+    padding:var(--space-l) 2rem;
+    margin-inline:auto;
+
+    max-width: 140rem;
+
+}
+
+.heading--sub,
+.heading--primary,
+.heading--secondary{
+    text-transform: uppercase;
+    text-align:center;
+}
+.heading--primary{
+    font-size: 3.2rem;
+
+
+}
+.heading--primary--sub{
+    font-size:3.6rem;
+display:block;
+letter-spacing:0.2rem;
+margin:var(--space-xs) 0;
+text-transform: capitalize;
+}
+
+.heading--secondary{
+    font-size: 3rem;
+    font-weight:700;
+    letter-spacing: 1rem;
+
+}
+
+.txt{
+    text-align: center;
+    max-width:50rem;
+    margin-inline: auto;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+
+}
+
+.heading--sub{
+    font-size: 1.8rem;
+    font-weight: 700;
+    color:#fff;
+    letter-spacing: 0.2rem;
+
+    
+}
+
+/******** helper classes ************/
+
+.margin-t-sm{
+    margin-top:var(--space-s);
+}
+.margin-t-m{
+    margin-top:var(--space-m);
+}
+.margin-bt-sm{
+    margin-bottom: var(--space-s);
+}
+.margin-bt-xs{
+    margin-bottom: var(--space-xs);
+}
+
+.btn,
+.btn:link,
+.btn:visited{
+    font-size: 1.6rem;
+    padding:0.5rem 2rem;
+    border-radius: var(--border-radius);
+    transition: all 0.5s;
+}
+
+.btn--filled:link,
+.btn--outline:link{
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: all 0.3s;
+    letter-spacing:0.1rem;
+
+}
+.btn--filled{
+
+    background-image: var(--gradient);
+    
+    color:var(--clr-txt);
+
+
+}
+.btn--outline{
+    background-image: var(--gradient);
+    color:transparent;
+    background-clip: text;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+
+}
+.btn--outline:hover,
+.btn--outline:active,
+.btn--filled:hover,
+.btn--filled:active{
+
+  transform: scale(1.1) translateY(-1rem);
+  letter-spacing: 0.3rem;
+  box-shadow: 0 4px 2px -2px  rgba(151, 142, 142, 0.2) ;
+
+
+
+}
+
+
+.flex-row{
+    display: flex;
+    justify-content: center;
+    align-items:flex-start;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: var(--clr-bg-secondary);
+  padding:2rem 4rem;
+    margin:1rem;
+    position: relative;
+    border-radius: var(--border-radius);
+    transition: all 0.8s;
+    align-self: stretch;
+
+}
+
+
+.card::after{
+    content: " ";
+    display:block;
+    width:103%;
+    height: 105%;
+    background-image: linear-gradient(to right bottom, #fc5c7d, #6a82fb);
+    border-radius: 1rem;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%) scale(0);
+    z-index: -1;
+}
+.card:hover::after{
+    transform: translate(-50%,-50%) scale(1);
+
+}
+
+/* background: linear-gradient(90deg,#4ca5ff 2.34%,#b673f8 100.78%); */
+
+
+.txt--gradient{
+
+
+background-image: var(--gradient);
+
+background-clip: text;
+-webkit-background-clip: text;
+color: transparent;
+}
+
+.icon-wrapper{
+ 
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+.icon{
+    font-size: 6rem;
+}
+
+.flex--row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+/******** header *****/
+.header{
+    position: sticky;
+    top:0;
+    left:0;
+    width:100%;
+    padding: var(--space-xs) var(--space-s);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--clr-bg);
+    z-index: 1;
+
+    box-shadow: 0 4px 2px -2px  rgba(151, 142, 142, 0.2) ;
+}
+
+.logo{
+    font-size: 2.4rem;
+    font-weight: 700;
+}
+/************** navbar **********/
+.nav__list{
+gap:0.2rem;
+
+}
+.nav__link:link,
+.nav__link:visited
+{
+    color:var(--clr-txt);
+
+
+
+}
+
+.nav__link:hover,
+.nav__link:active{
+    background-image: var(--gradient);
+    border-radius: var(--border-radius);
+
+}
+/***** hero ********/
+.section-hero{
+    height:calc( 100vh - 60px );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/********* about me ***********/
+.section-about{
+    background-color: var(--clr-bg-secondary);
+}
+.btns{
+
+    text-align: center;
+    gap:3rem;
+}
+.about-content .txt{
+    max-width: 65rem;
+}
+/****** skills *********/
+
+.skill.card{
+    width:20rem;
+
+}
+
+
+
+
+
+
+/********* services ******/
+.service .icon{
+    font-size: 4rem;
+}
+
+.service.card{
+    width:90%;
+    width:50rem;
+    padding:3rem  2rem;
+}
+
+
+/****** contact me **********/
+.form__gp--flex,
+.form{
+    /* border:1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:2rem;
+    
+}
+
+.form__input{
+width:32rem;
+
+padding:1rem;
+background-color:#353535;
+background-color:var(--clr-bg-secondary);
+color:var(--clr-txt);
+border:none;
+outline: none;
+border-bottom:4px solid rgba(151, 142, 142, 0.4);
+
+}
+
+.form__input:focus{
+    border-bottom: 4px solid #b66fba;
+}
+
+.form__input:focus:invalid{
+    border-bottom: 4px solid red;
+}
+.form__input:focus:valid{
+    border-bottom: 4px solid rgb(102, 223, 102);
+}
+.form__label{
+    display: block;
+}
+
+/***** footer *******/
+.footer__list{
+ gap:1rem;
+ margin:2rem 0;
+}
+.footer__icon{
+    font-size: 2.4rem;
+}
+.footer__link:link,
+.footer__link:visited{
+    color:var(--clr-txt);
+}
+.footer__link:hover,
+.footer__link:active{
+    background-image: var(--gradient);
+
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.cp{
+    color:var(--clr-txt);
+    font-size: 1.4rem;
+    text-align: center;
+}
