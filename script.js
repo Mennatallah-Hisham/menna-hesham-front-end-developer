@@ -18,6 +18,14 @@ function toggleNavbar(){
     html.classList.toggle("overflowY");
 }
 
+
+function closeNavbar(){
+
+    headerEl.classList.remove("open-nav");
+    btnNavClose.classList.toggle("hide");
+    btnNavOpen.classList.toggle("hide");
+    html.classList.remove("overflowY");
+}
 btnNav.addEventListener("click",toggleNavbar);
 
 
@@ -48,8 +56,8 @@ allLinks.forEach( function(link){
         }
 
         //close mobile nav
-        if(link.classList.contains('nav__link') && headerEl.contains("open-nav")){
-           toggleNavbar();
+        if(link.classList.contains('nav__link')){
+           closeNavbar();
         }
 
     });
