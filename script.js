@@ -30,6 +30,7 @@ btnNav.addEventListener("click",toggleNavbar);
 
 
 /********** smoothscroll */
+
 allLinks.forEach( function(link){
     link.addEventListener('click',(e)=>{
 
@@ -55,11 +56,14 @@ allLinks.forEach( function(link){
           )
         }
 
-        //close mobile nav
-        if(link.classList.contains('nav__link')){
-           closeNavbar();
-        }
+        if(headerEl.classList.contains("open-nav")){
+ //close mobile nav
+ if(link.classList.contains('nav__link')){
+    toggleNavbar();
+ }
 
+        }
+       
     });
 
 })
