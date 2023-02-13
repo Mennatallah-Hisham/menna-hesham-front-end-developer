@@ -22,6 +22,16 @@
 <a href="#" >
     <p class="txt--gradient logo"> Menna Hesham</p>
 </a> 
+<button class="btn-nav">
+    <span class="btn-nav--open">
+
+        <i class="fas fa-bars"></i>
+    </span>
+    <span class="hide btn-nav--close">
+        <i class="fas fa-times"></i>
+    </span>
+ 
+</button>
 
         <nav class="nav">
             <ul class="nav__list flex--row">
@@ -37,9 +47,7 @@
                 <li class="list__item">
                     <a href="#projects" class="btn nav__link">projects</a>
                 </li>
-                <li class="list__item">
-                    <a href="#testimonials" class="btn nav__link">testimonials</a>
-                </li>
+             
                 <li class="list__item">
                     <a href="#contact" class="btn nav__link ">contact</a>
                 </li>
@@ -61,11 +69,12 @@
 
           
         </div>
+        <img src="images/Hand-coding.png"  alt=""  class="hero__img"/>
 
     </section>
 
      <!-- SECTION HERO/ABOUT -->
-     <section class="section-about">
+     <section class="section-about" id="about">
         <article class="about-content">
         <h2 class="heading--secondary txt--gradient margin-bt-sm">
             about me
@@ -75,10 +84,10 @@
                 I am a highly skilled and experienced front-end developer with a proven track record of delivering outstanding results in web development projects. My expertise includes HTML, HTML5, CSS, CSS3, SASS/SCSS, JavaScript (ES6), React JS, React Router, Redux Toolkit, Ajax (axios and fetch), and REST API. I am proficient in utilizing these technologies to create modern, responsive, and user-friendly web applications. 
             </p>
             <div class="btns margin-t-m flex--row">
-                <a href="#" class="btn btn--filled">
+                <a href="#contact" class="btn btn--filled">
                     hire me
                 </a>
-                <a href="#" class="btn btn--outline">
+                <a href="./menna-hesham frontend developer.pdf" download class="btn btn--outline">
                     download cv
                 </a>
             </div>
@@ -86,7 +95,7 @@
         </article>
      </section>
      <!-- SECTION SKILLS-->
-     <section class="section-skills">
+     <section class="section-skills" id="skills">
         <h2 class="heading--secondary txt--gradient margin-bt-sm">
             skills
         </h2>
@@ -176,7 +185,7 @@
      </section>
 
      <!-- SECTION SERVICES -->
-     <section class="section-services">
+     <section class="section-services" id="services">
         <h2 class="heading--secondary txt--gradient margin-bt-sm">
             services
         </h2>
@@ -247,15 +256,58 @@
             </li>
         </ul>
      </section>
+
      <!-- SECTION PROJECTS -->
-     <section class="section-projects">
+     <section class="section-projects" id="projects">
    <h2 class="heading--secondary txt--gradient margin-bt-sm">
     projects
    </h2>
+
+   <ul class="projects-list flex--row">
+    <li>
+        <article class="project card">
+            <img src="images/p1.png" alt="project hero image"/>
+            <p class="project__title txt"> e-commerce home page</p>
+            <div class="project__overlay">
+                <a href="#" ><i class="far fa-eye icon--primary icon"></i></a>
+            </div>
+
+        </article>
+    </li>
+    <li>
+        <article class="project card">
+            <img src="images/p2.png" alt="project hero image"/>
+            <p class="project__title txt"> e-commerce home page</p>
+            <div class="project__overlay">
+                <a href="#" ><i class="far fa-eye icon--primary icon"></i></a>
+            </div>
+
+        </article>
+    </li>
+    <li>
+        <article class=" project card">
+            <img src="images/p3.png" alt="project hero image"/>
+            <p class="project__title txt"> e-commerce home page</p>
+<div class="project__overlay">
+    <a href="#" ><i class="far fa-eye icon--primary icon"></i></a>
+</div>
+        </article>
+    </li>
+    <li>
+        <article class=" project card">
+            <img src="images/p4.png" alt="project hero image"/>
+            <p class="project__title txt margin-t-s"> e-commerce home page</p>
+            <div class="project__overlay">
+                <a href="#" ><i class="far fa-eye icon--primary icon"></i></a>
+            </div>
+
+        </article>
+    </li>
+   </ul>
      </section>
      <!-- SECTION TESTIMONIALS -->
      <!-- SECTION CONTACT-->
-     <section class="section-contact">
+     <section class="section-contact" id="contact">
         <h2 class="heading--secondary txt--gradient margin-bt-sm">
          let's work together
         </h2>
@@ -325,7 +377,10 @@
                 </a>
             </li>
         </ul>
-        <p class="cp"> copyright &copy; Menna Hesham 2023. All rights reserved</p>
+        <p class="cp"> copyright &copy; 
+            
+            <a href="#" class="footer-cp__link btn">Menna Hesham </a>2023. All rights reserved</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
