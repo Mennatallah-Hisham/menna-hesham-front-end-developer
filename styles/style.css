@@ -137,6 +137,9 @@ color:var(--clr-primary);
     margin-bottom: var(--space-xs);
 }
 
+.margin-l-xs{
+    margin-left: var(--space-xs); 
+}
 .btn,
 .btn:link,
 .btn:visited{
@@ -211,7 +214,6 @@ color:var(--clr-primary);
 
 }
 
-
 .skill::after,
 .card::after{
     content: " ";
@@ -226,12 +228,12 @@ color:var(--clr-primary);
     transform: translate(-50%,-50%) scale(0);
     z-index: -1;
 }
+
 .skill::after{
     transform: translate(-50%,-50%) scale(1);
 }
 .card:hover::after{
     transform: translate(-50%,-50%) scale(1);
-
 }
 
 
@@ -425,6 +427,24 @@ gap:0.2rem;
 }
 .project:hover .project__overlay{
     transform: scale(1);
+}
+.project__tags{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+    justify-content:center;
+    gap:1rem;
+    margin:1rem auto;
+   
+
+
+}
+.tag{
+  font-size:1.4rem;
+  border-radius:1rem;
+  background-color:var(--clr-primary);
+  color:#fff;
+  padding:0.5rem 1.5rem;
 }
 
 /****** contact me **********/
