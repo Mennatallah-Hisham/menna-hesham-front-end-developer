@@ -212,6 +212,7 @@ color:var(--clr-primary);
 }
 
 
+.skill::after,
 .card::after{
     content: " ";
     display:block;
@@ -224,6 +225,9 @@ color:var(--clr-primary);
     left:50%;
     transform: translate(-50%,-50%) scale(0);
     z-index: -1;
+}
+.skill::after{
+    transform: translate(-50%,-50%) scale(1);
 }
 .card:hover::after{
     transform: translate(-50%,-50%) scale(1);
@@ -378,6 +382,7 @@ gap:0.2rem;
 
 .skill.card{
     width:20rem;
+   
 
 }
 
