@@ -487,11 +487,11 @@ border-bottom:4px solid rgba(151, 142, 142, 0.4);
 
 /***** footer *******/
 .footer__list{
- gap:1rem;
+ gap:2rem;
  margin:2rem 0;
 }
 .footer__icon{
-    font-size: 2.4rem;
+    font-size: 4.4rem;
 }
 .footer__link:link,
 .footer__link:visited{

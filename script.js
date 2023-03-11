@@ -34,11 +34,12 @@ btnNav.addEventListener("click",toggleNavbar);
 allLinks.forEach( function(link){
     link.addEventListener('click',(e)=>{
 
-        e.preventDefault();
+       
         const href=link.getAttribute("href");
 
         //scroll back to top
         if(href==="#"){
+            e.preventDefault();
             window.scrollTo({
                 top:0,
                 behavior:"smooth",
@@ -48,6 +49,7 @@ allLinks.forEach( function(link){
 
         //scroll to other links
         if(href !=="#" && href.startsWith("#")){
+            e.preventDefault();
           const sectionEl=  document.querySelector(href);
           sectionEl.scrollIntoView(
             {
